@@ -64,6 +64,7 @@ int main(int argc, char** argv) {
             surf = SkSurface::MakeRaster(info);
         }
         
+        // 初始化canvas
         surf->getCanvas()->scale(scale, scale);
         SkCanvas* canvas = surf->getCanvas();
         canvas->clear(SK_ColorWHITE);
@@ -76,7 +77,7 @@ int main(int argc, char** argv) {
             const double frame = i;
             SkDebugf("rendering frame %g\n", frame);
             
-            // produce frame
+            // 绘制帧
             paint.setColor(rand.nextU() | 0x44808080);
             canvas->save();
             canvas->translate(i, i);
@@ -104,7 +105,8 @@ int main(int argc, char** argv) {
         
     } while (loop);
     
-    SkFILEWStream ostream("react.mp4");
+    // 写mp4文件
+    SkFILEWStream ostream("rect.mp4");
     if (!ostream.isValid()) {
         SkDebugf("Can't create output file %s\n", "rect.mp4");
         return -1;

@@ -16,9 +16,9 @@
 		09F0DE87239FA4C600EC728F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE85239FA4B900EC728F /* libavcodec.a */; };
 		09F0DE88239FA4D200EC728F /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE83239FA4B900EC728F /* libavformat.a */; };
 		09F0DE89239FA4E000EC728F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE82239FA4B900EC728F /* libavutil.a */; };
-		09F0DE8C239FA53000EC728F /* SkVideoEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */; };
 		09F0DE8E239FA55B00EC728F /* libskia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE8D239FA55A00EC728F /* libskia.a */; };
 		09F0DE8F239FA57800EC728F /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE84239FA4B900EC728F /* libswscale.a */; };
+		09F0DE99239FC61100EC728F /* SkVideoEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F0DE98239FC61100EC728F /* SkVideoEncoder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,9 +47,9 @@
 		09F0DE84239FA4B900EC728F /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libswscale.a; sourceTree = "<group>"; };
 		09F0DE85239FA4B900EC728F /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libavcodec.a; sourceTree = "<group>"; };
 		09F0DE86239FA4B900EC728F /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libswresample.a; sourceTree = "<group>"; };
-		09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkVideoEncoder.cpp; path = ../../skia/experimental/ffmpeg/SkVideoEncoder.cpp; sourceTree = "<group>"; };
-		09F0DE8B239FA53000EC728F /* SkVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkVideoEncoder.h; path = ../../skia/experimental/ffmpeg/SkVideoEncoder.h; sourceTree = "<group>"; };
 		09F0DE8D239FA55A00EC728F /* libskia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libskia.a; path = ../skia/out/Clang/libskia.a; sourceTree = "<group>"; };
+		09F0DE97239FC61100EC728F /* SkVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkVideoEncoder.h; path = ../../../skia/experimental/ffmpeg/SkVideoEncoder.h; sourceTree = "<group>"; };
+		09F0DE98239FC61100EC728F /* SkVideoEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkVideoEncoder.cpp; path = ../../../skia/experimental/ffmpeg/SkVideoEncoder.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +93,7 @@
 		09F0DE6E239FA44600EC728F /* skia-learning */ = {
 			isa = PBXGroup;
 			children = (
-				09F0DE6F239FA44600EC728F /* main.cpp */,
-				09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */,
-				09F0DE8B239FA53000EC728F /* SkVideoEncoder.h */,
+				09F0DE93239FC57700EC728F /* animation2mp4 */,
 			);
 			path = "skia-learning";
 			sourceTree = "<group>";
@@ -117,6 +115,16 @@
 				09F0DE79239FA49B00EC728F /* CoreText.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09F0DE93239FC57700EC728F /* animation2mp4 */ = {
+			isa = PBXGroup;
+			children = (
+				09F0DE6F239FA44600EC728F /* main.cpp */,
+				09F0DE98239FC61100EC728F /* SkVideoEncoder.cpp */,
+				09F0DE97239FC61100EC728F /* SkVideoEncoder.h */,
+			);
+			path = animation2mp4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F0DE8C239FA53000EC728F /* SkVideoEncoder.cpp in Sources */,
+				09F0DE99239FC61100EC728F /* SkVideoEncoder.cpp in Sources */,
 				09F0DE70239FA44600EC728F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
