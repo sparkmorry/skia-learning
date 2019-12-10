@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09F0DE70239FA44600EC728F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F0DE6F239FA44600EC728F /* main.cpp */; };
+		09F0DE7B239FA49B00EC728F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE77239FA49B00EC728F /* CoreGraphics.framework */; };
+		09F0DE7C239FA49B00EC728F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE78239FA49B00EC728F /* CoreServices.framework */; };
+		09F0DE7D239FA49B00EC728F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE79239FA49B00EC728F /* CoreText.framework */; };
+		09F0DE7E239FA49B00EC728F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE7A239FA49B00EC728F /* CoreFoundation.framework */; };
+		09F0DE80239FA4A400EC728F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE7F239FA4A400EC728F /* OpenGL.framework */; };
+		09F0DE87239FA4C600EC728F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE85239FA4B900EC728F /* libavcodec.a */; };
+		09F0DE88239FA4D200EC728F /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE83239FA4B900EC728F /* libavformat.a */; };
+		09F0DE89239FA4E000EC728F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE82239FA4B900EC728F /* libavutil.a */; };
+		09F0DE8C239FA53000EC728F /* SkVideoEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */; };
+		09F0DE8E239FA55B00EC728F /* libskia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE8D239FA55A00EC728F /* libskia.a */; };
+		09F0DE8F239FA57800EC728F /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0DE84239FA4B900EC728F /* libswscale.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09F0DE6A239FA44600EC728F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09F0DE6C239FA44600EC728F /* skia-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "skia-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F0DE6F239FA44600EC728F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		09F0DE77239FA49B00EC728F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09F0DE78239FA49B00EC728F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		09F0DE79239FA49B00EC728F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		09F0DE7A239FA49B00EC728F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		09F0DE7F239FA4A400EC728F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		09F0DE81239FA4B900EC728F /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libavresample.a; sourceTree = "<group>"; };
+		09F0DE82239FA4B900EC728F /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libavutil.a; sourceTree = "<group>"; };
+		09F0DE83239FA4B900EC728F /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libavformat.a; sourceTree = "<group>"; };
+		09F0DE84239FA4B900EC728F /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libswscale.a; sourceTree = "<group>"; };
+		09F0DE85239FA4B900EC728F /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libavcodec.a; sourceTree = "<group>"; };
+		09F0DE86239FA4B900EC728F /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../../usr/local/Cellar/ffmpeg/4.2.1_1/lib/libswresample.a; sourceTree = "<group>"; };
+		09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkVideoEncoder.cpp; path = ../../skia/experimental/ffmpeg/SkVideoEncoder.cpp; sourceTree = "<group>"; };
+		09F0DE8B239FA53000EC728F /* SkVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkVideoEncoder.h; path = ../../skia/experimental/ffmpeg/SkVideoEncoder.h; sourceTree = "<group>"; };
+		09F0DE8D239FA55A00EC728F /* libskia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libskia.a; path = ../skia/out/Clang/libskia.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09F0DE69239FA44600EC728F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F0DE8F239FA57800EC728F /* libswscale.a in Frameworks */,
+				09F0DE8E239FA55B00EC728F /* libskia.a in Frameworks */,
+				09F0DE7E239FA49B00EC728F /* CoreFoundation.framework in Frameworks */,
+				09F0DE7B239FA49B00EC728F /* CoreGraphics.framework in Frameworks */,
+				09F0DE88239FA4D200EC728F /* libavformat.a in Frameworks */,
+				09F0DE7C239FA49B00EC728F /* CoreServices.framework in Frameworks */,
+				09F0DE80239FA4A400EC728F /* OpenGL.framework in Frameworks */,
+				09F0DE7D239FA49B00EC728F /* CoreText.framework in Frameworks */,
+				09F0DE89239FA4E000EC728F /* libavutil.a in Frameworks */,
+				09F0DE87239FA4C600EC728F /* libavcodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F0DE63239FA44600EC728F = {
+			isa = PBXGroup;
+			children = (
+				09F0DE6E239FA44600EC728F /* skia-learning */,
+				09F0DE6D239FA44600EC728F /* Products */,
+				09F0DE76239FA49B00EC728F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09F0DE6D239FA44600EC728F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09F0DE6C239FA44600EC728F /* skia-learning */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09F0DE6E239FA44600EC728F /* skia-learning */ = {
+			isa = PBXGroup;
+			children = (
+				09F0DE6F239FA44600EC728F /* main.cpp */,
+				09F0DE8A239FA53000EC728F /* SkVideoEncoder.cpp */,
+				09F0DE8B239FA53000EC728F /* SkVideoEncoder.h */,
+			);
+			path = "skia-learning";
+			sourceTree = "<group>";
+		};
+		09F0DE76239FA49B00EC728F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F0DE8D239FA55A00EC728F /* libskia.a */,
+				09F0DE85239FA4B900EC728F /* libavcodec.a */,
+				09F0DE83239FA4B900EC728F /* libavformat.a */,
+				09F0DE81239FA4B900EC728F /* libavresample.a */,
+				09F0DE82239FA4B900EC728F /* libavutil.a */,
+				09F0DE86239FA4B900EC728F /* libswresample.a */,
+				09F0DE84239FA4B900EC728F /* libswscale.a */,
+				09F0DE7F239FA4A400EC728F /* OpenGL.framework */,
+				09F0DE7A239FA49B00EC728F /* CoreFoundation.framework */,
+				09F0DE77239FA49B00EC728F /* CoreGraphics.framework */,
+				09F0DE78239FA49B00EC728F /* CoreServices.framework */,
+				09F0DE79239FA49B00EC728F /* CoreText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09F0DE6B239FA44600EC728F /* skia-learning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F0DE73239FA44600EC728F /* Build configuration list for PBXNativeTarget "skia-learning" */;
+			buildPhases = (
+				09F0DE68239FA44600EC728F /* Sources */,
+				09F0DE69239FA44600EC728F /* Frameworks */,
+				09F0DE6A239FA44600EC728F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "skia-learning";
+			productName = "skia-learning";
+			productReference = 09F0DE6C239FA44600EC728F /* skia-learning */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09F0DE64239FA44600EC728F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "九瑶";
+				TargetAttributes = {
+					09F0DE6B239FA44600EC728F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 09F0DE67239FA44600EC728F /* Build configuration list for PBXProject "skia-learning" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09F0DE63239FA44600EC728F;
+			productRefGroup = 09F0DE6D239FA44600EC728F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09F0DE6B239FA44600EC728F /* skia-learning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09F0DE68239FA44600EC728F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F0DE8C239FA53000EC728F /* SkVideoEncoder.cpp in Sources */,
+				09F0DE70239FA44600EC728F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09F0DE71239FA44600EC728F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		09F0DE72239FA44600EC728F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		09F0DE74239FA44600EC728F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mengli.xml/Documents/stream-based/skia",
+					/usr/local/Cellar/ffmpeg/4.2.1_1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.2.1_1/lib,
+					"/Users/mengli.xml/Documents/stream-based/skia/out/Clang/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09F0DE75239FA44600EC728F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mengli.xml/Documents/stream-based/skia",
+					/usr/local/Cellar/ffmpeg/4.2.1_1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.2.1_1/lib,
+					"/Users/mengli.xml/Documents/stream-based/skia/out/Clang/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F0DE67239FA44600EC728F /* Build configuration list for PBXProject "skia-learning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F0DE71239FA44600EC728F /* Debug */,
+				09F0DE72239FA44600EC728F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F0DE73239FA44600EC728F /* Build configuration list for PBXNativeTarget "skia-learning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F0DE74239FA44600EC728F /* Debug */,
+				09F0DE75239FA44600EC728F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09F0DE64239FA44600EC728F /* Project object */;
+}
